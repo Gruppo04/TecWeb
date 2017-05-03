@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="registrazione.js"></script>
+	<title>Registrati</title>
+    </head>
+    <body>
+        <header>
+            <h1>Logo</h1>
+        </header>
+        <nav>
+            <h4 style="text-align: right">Metto qua i vari pulsanti della navbar</h4>
+        </nav>
+        <h1>Iscriviti a Coupon is life</h1>
+	<p>
+            Crea un account gratuito per poter ottenere i coupon!
+        </p>
+        <hr>
+        <form name="registrazione" method="post" onsubmit="return verificaForm();">
+            <p>Compila i campi sottostanti</p>
+            <br>
+            <label>Nome <input name="nome" type="text" size="17"  autofocus></label>
+            &nbsp;
+            <label>Cognome <input name="cognome" type="text" size="17"></label>
+            <br><br>
+            <label>Data di nascita <input name="data_nascita" type="date" size="25"></label>
+            &nbsp; &nbsp;
+            <label>Maschio <input type="radio" name="sesso" value="M" checked></label>
+            <label>Femmina <input type="radio" name="sesso" value="F"></label>
+            <br><br>
+            <label>Provincia</label>
+            <select name="provincia"><option title="Seleziona una provincia" value="" selected="">Seleziona una provincia</option><option title="Agrigento" value="AG">Agrigento</option><option title="Alessandria" value="AL">Alessandria</option><option title="Ancona" value="AN">Ancona</option><option title="Aosta" value="AO">Aosta</option><option title="Arezzo" value="AR">Arezzo</option><option title="Ascoli Piceno" value="AP">Ascoli Piceno</option><option title="Asti" value="AT">Asti</option><option title="Avellino" value="AV">Avellino</option><option title="Bari" value="BA">Bari</option><option title="Barletta-Andria-Trani" value="BT">Barletta-Andria-Trani</option><option title="Belluno" value="BL">Belluno</option><option title="Benevento" value="BN">Benevento</option><option title="Bergamo" value="BG">Bergamo</option><option title="Biella" value="BI">Biella</option><option title="Bologna" value="BO">Bologna</option><option title="Bolzano" value="BZ">Bolzano</option><option title="Brescia" value="BS">Brescia</option><option title="Brindisi" value="BR">Brindisi</option><option title="Cagliari" value="CA">Cagliari</option><option title="Caltanissetta" value="CL">Caltanissetta</option><option title="Campobasso" value="CB">Campobasso</option><option title="Carbonia-Iglesias" value="CI">Carbonia-Iglesias</option><option title="Caserta" value="CE">Caserta</option><option title="Catania" value="CT">Catania</option><option title="Catanzaro" value="CZ">Catanzaro</option><option title="Chieti" value="CH">Chieti</option><option title="Como" value="CO">Como</option><option title="Cosenza" value="CS">Cosenza</option><option title="Cremona" value="CR">Cremona</option><option title="Crotone" value="KR">Crotone</option><option title="Cuneo" value="CN">Cuneo</option><option title="Enna" value="EN">Enna</option><option title="Fermo" value="FM">Fermo</option><option title="Ferrara" value="FE">Ferrara</option><option title="Firenze" value="FI">Firenze</option><option title="Foggia" value="FG">Foggia</option><option title="Forlì-Cesena" value="FC">Forlì-Cesena</option><option title="Frosinone" value="FR">Frosinone</option><option title="Genova" value="GE">Genova</option><option title="Gorizia" value="GO">Gorizia</option><option title="Grosseto" value="GR">Grosseto</option><option title="Imperia" value="IM">Imperia</option><option title="Isernia" value="IS">Isernia</option><option title="L'Aquila" value="AQ">L'Aquila</option><option title="La Spezia" value="SP">La Spezia</option><option title="Latina" value="LT">Latina</option><option title="Lecce" value="LE">Lecce</option><option title="Lecco" value="LC">Lecco</option><option title="Livorno" value="LI">Livorno</option><option title="Lodi" value="LO">Lodi</option><option title="Lucca" value="LU">Lucca</option><option title="Macerata" value="MC">Macerata</option><option title="Mantova" value="MN">Mantova</option><option title="Massa Carrara" value="MS">Massa Carrara</option><option title="Matera" value="MT">Matera</option><option title="Medio Campidano" value="VS">Medio Campidano</option><option title="Messina" value="ME">Messina</option><option title="Milano" value="MI">Milano</option><option title="Modena" value="MO">Modena</option><option title="Monza-Brianza" value="MB">Monza-Brianza</option><option title="Napoli" value="NA">Napoli</option><option title="Novara" value="NO">Novara</option><option title="Nuoro" value="NU">Nuoro</option><option title="Ogliastra" value="OG">Ogliastra</option><option title="Olbia-Tempio" value="OT">Olbia-Tempio</option><option title="Oristano" value="OR">Oristano</option><option title="Padova" value="PD">Padova</option><option title="Palermo" value="PA">Palermo</option><option title="Parma" value="PR">Parma</option><option title="Pavia" value="PV">Pavia</option><option title="Perugia" value="PG">Perugia</option><option title="Pesaro e Urbino" value="PU">Pesaro e Urbino</option><option title="Pescara" value="PE">Pescara</option><option title="Piacenza" value="PC">Piacenza</option><option title="Pisa" value="PI">Pisa</option><option title="Pistoia" value="PT">Pistoia</option><option title="Pordenone" value="PN">Pordenone</option><option title="Potenza" value="PZ">Potenza</option><option title="Prato" value="PO">Prato</option><option title="Ragusa" value="RG">Ragusa</option><option title="Ravenna" value="RA">Ravenna</option><option title="Reggio Calabria" value="RC">Reggio Calabria</option><option title="Reggio Emilia" value="RE">Reggio Emilia</option><option title="Rieti" value="RI">Rieti</option><option title="Rimini" value="RN">Rimini</option><option title="Roma" value="RM">Roma</option><option title="Rovigo" value="RO">Rovigo</option><option title="Salerno" value="SA">Salerno</option><option title="Sassari" value="SS">Sassari</option><option title="Savona" value="SV">Savona</option><option title="Siena" value="SI">Siena</option><option title="Siracusa" value="SR">Siracusa</option><option title="Sondrio" value="SO">Sondrio</option><option title="Taranto" value="TA">Taranto</option><option title="Teramo" value="TE">Teramo</option><option title="Terni" value="TR">Terni</option><option title="Torino" value="TO">Torino</option><option title="Trapani" value="TP">Trapani</option><option title="Trento" value="TN">Trento</option><option title="Treviso" value="TV">Treviso</option><option title="Trieste" value="TS">Trieste</option><option title="Udine" value="UD">Udine</option><option title="Varese" value="VA">Varese</option><option title="Venezia" value="VE">Venezia</option><option title="Verbano-Cusio-Ossola" value="VB">Verbano-Cusio-Ossola</option><option title="Vercelli" value="VC">Vercelli</option><option title="Verona" value="VR">Verona</option><option title="Vibo Valentia" value="VV">Vibo Valentia</option><option title="Vicenza" value="VI">Vicenza</option><option title="Viterbo" value="VT">Viterbo</option></select>
+            &nbsp; &nbsp;
+            <label>Comune <input type="text" name="comune" size="30"></label>
+            <br><br>
+            <label>Numero di telefono <input name="telefono" type="number" size="10" placeholder="(facoltativo)"></label>
+            <br><br>
+            <label>Indirizzo e-mail <input name="email" type="email" size="30"></label>
+            <br><br>
+            <label>Scegli un nome utente <input name="username" type="text"></label>
+            <br><br>
+            <label>Scegli una password <input name="pass" type="password"></label>
+            <br><br>
+            <label>Conferma la password <input name="passC" type="password"></label>
+            <br><br>
+            <input type="submit" value="ISCRIVITI">
+        </form>
+        <hr>
+        <footer style="text-align: center"> Inserire qua i contatti 
+            <p style="font-size: x-small; text-align: center"> Inserire qua i contatti</p>
+        </footer>
+    </body>
+</html>
